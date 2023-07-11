@@ -1,0 +1,5 @@
+# L2TP Cmdlet #
+Add-VpnConnection -Name "VPN ESA L2TP" -ServerAddress "server address" -TunnelType L2TP -L2tpPsk "secret key" -AuthenticationMethod "MSChapv2" -RememberCredential -DnsSuffix "esa.local"
+
+# PPTP Cmdlet #
+Add-VpnConnection -Name "VPN ESA PPTP" -ServerAddress "server address" -TunnelType "PPTP" -EncryptionLevel "Required" -AuthenticationMethod "MSChapv2" -RememberCredential -DnsSuffix "esa.local"
